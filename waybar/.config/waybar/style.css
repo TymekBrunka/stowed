@@ -1,0 +1,107 @@
+/*
+ from https://github.com/rbnis/legacy-dotfiles/blob/master/.config/waybar/
+*/
+* {
+    border:        none;
+    border-radius: 0;
+    font-family:   JetBrainsMonoNL Nerd Font Mono;
+    font-size:     13px;
+    letter-spacing: 1px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+}
+
+window {
+    color:      #b1b4b9;
+    background: #2c2d30;
+}
+
+window#waybar.solo {
+    color:      #b1b4b9;
+    background: #2c2d30;
+}
+
+#window {
+    margin-left: 8px;
+}
+
+#tags {
+    margin-left: 0px;
+    padding-left: 0px;
+    /* margin: 0 5px; */
+}
+
+#tags button {
+    padding:    0 6px;
+    color:      #97ca72;
+    background-color: #282c34;
+}
+
+#tags button.visible {
+    color:      #b1b4b9;
+}
+
+#tags button.focused {
+    color:      #e16d77;
+    background-color: #181b20;
+    border-top: 2px solid #e16d77;
+    border-bottom: 2px solid rgba(217, 216, 216, 0);
+}
+
+#tags button.urgent {
+    background-color:      rgba(238, 46, 36, 1);
+}
+
+#battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight {
+    margin:     0px 5px;
+    min-width:  25px;
+}
+
+#idle_inhibitor {
+    color: #546178;
+}
+
+#backlight {
+    color: #ebc275;
+}
+
+#pulseaudio, #network {
+    background-color: #404247;
+    margin: 5px 3px;
+    padding: 0px 6px;
+}
+
+#pulseaudio {
+    margin-right: 0px;
+    border-radius: 7px 0 0 7px;
+    color: #c99a6e;
+}
+
+#network {
+    margin-left: 0px;
+    border-radius: 0 7px 7px 0;
+    color: #4dbdcb;
+}
+
+#clock {
+    margin:     0px 16px 0px 10px;
+    min-width:  140px;
+    color: #ca72e4;
+}
+
+#battery {
+    color: #97ca72;
+}
+
+#battery.warning {
+   color:       rgba(255, 210, 4, 1);
+}
+
+#battery.critical {
+    color:      rgba(238, 46, 36, 1);
+}
+
+#battery.charging {
+    color:      rgba(217, 216, 216, 1);
+}

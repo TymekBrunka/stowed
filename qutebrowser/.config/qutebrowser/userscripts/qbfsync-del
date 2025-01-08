@@ -1,0 +1,4 @@
+#!/bin/env bash
+#from https://github.com/peterjschroeder/qb-scripts/blob/master
+# /home/$USER/$XDG_CONFIG_HOME/.local/share/qutebrowser/userscripts/qbfsync del "$1"
+~/.config/qutebrowser/userscripts/qbfsync del "$1"
