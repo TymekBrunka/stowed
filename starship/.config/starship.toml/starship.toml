@@ -1,0 +1,32 @@
+# ~/.config/starship.toml
+
+# Use custom format
+format = """
+ $status\
+ $directory\
+ $git_branch\
+ [❯](42) 
+"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# palette = 'my'
+
+# [palettes.my]
+[directory]
+truncation_length = 255
+# truncation_symbol = '…/'
+truncate_to_repo = false
+style = '43'
+
+[git_branch]
+style = '183'
+format = "[$symbol$branch$remote_name/$remote_branch]($style) "
+
+[status]
+disabled = false
+format = '[](161)[$common_meaning$signal_name$maybe_int](bg:161 fg:white)[](161) '
