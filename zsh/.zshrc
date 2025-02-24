@@ -1,4 +1,4 @@
-# Set the directory we want to store zinit and plugins
+﻿# Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -92,3 +92,5 @@ if [[ $XDG_SESSION_DESKTOP == "river" ]]; then
     export XDG_CURRENT_DESKTOP=sway
     export QT_QPA_PLATFORM="wayland;xcb"
 fi;
+
+export PATH="$HOME/.cargo/bin/:$PATH"

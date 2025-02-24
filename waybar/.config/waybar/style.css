@@ -4,7 +4,8 @@
 * {
     border:        none;
     border-radius: 0;
-    font-family:   JetBrainsMonoNL Nerd Font Mono;
+    /* font-family:   JetBrainsMonoNL Nerd Font Mono; */
+    font-family:   JetBrains Mono;
     font-size:     13px;
     letter-spacing: 1px;
     box-shadow:    none;
@@ -33,8 +34,9 @@ window#waybar.solo {
 }
 
 #tags button {
-    padding:    0 6px;
+    padding:    2px 0;
     color:      #97ca72;
+    margin: 0;
     background-color: #282c34;
 }
 
