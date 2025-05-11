@@ -31,6 +31,8 @@ riverctl map normal ${MOD} Return spawn kitty
 riverctl map normal ${MOD} D spawn "rofi -show drun"
 riverctl map normal ${MOD} Tab spawn ~/scripts/screenshot.sh
 
+riverctl map normal ${MOD} A spawn ~/scripts/screenshot-leczek.sh
+
 # ${MOD}+Q to close the focused view
 riverctl map normal ${MOD} Q close
 
@@ -189,6 +191,7 @@ riverctl set-repeat 50 300
 # River will send the process group of the init executable SIGTERM on exit.
 
 # riverctl default-layout rivertile
+/home/tymek/.cargo/bin/river-bsp-layout --inner-gap 0 --outer-gap 0 --split-perc 0.5 &
 riverctl default-layout bsp-layout
 
 riverctl keyboard-layout pl
@@ -197,4 +200,3 @@ riverctl input $mMOUSE accel-profile flat
 riverctl input $mMOUSE pointer-accel -0.3
 # rivertile -view-padding 0 -outer-padding 0 &
 
-river-bsp-layout --inner-gap 0 --outer-gap 0 --split-perc 0.5 &
