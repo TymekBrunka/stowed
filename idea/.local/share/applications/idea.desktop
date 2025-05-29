@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+TryExec=/home/tymek/Pobrane/ideaIC/bin/idea
+Exec=/home/tymek/Pobrane/ideaIC/bin/idea
+Icon=Idea
+Terminal=false
+Categories=IDE;
+
+Name=InteliJ IDEA
+GenericName=idea
+Comment=Java IDE
+StartupNotify=true
+StartupWMClass=idea
+Actions=New;
+X-Desktop-File-Install-Version=0.28

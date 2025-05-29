@@ -3,9 +3,10 @@
 # Use custom format
 format = """
  $status\
- $directory\
+ [on]() $directory\
  $git_branch\
- [❯](42) 
+ $cmd_duration
+ $character
 """
 
 # Wait 10 milliseconds for starship to check files under the current directory.
@@ -25,8 +26,12 @@ style = '43'
 
 [git_branch]
 style = '183'
-format = "[$symbol$branch$remote_name/$remote_branch]($style) "
+format = "[ $branch$remote_name/$remote_branch]($style) "
 
 [status]
 disabled = false
 format = '[](161)[$common_meaning$signal_name$maybe_int](bg:161 fg:white)[](161) '
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
