@@ -60,6 +60,7 @@ bindkey '^[[B' history-substring-search-down
 # Aliases
 alias ls='ls --color'
 alias nv='nvim'
+alias gf='~/.config/gf/gf2'
 alias c='clear'
 alias sudo='doas'
 alias m='make'

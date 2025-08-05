@@ -26,7 +26,7 @@ style = '43'
 
 [git_branch]
 style = '183'
-format = "[ $branch$remote_name/$remote_branch]($style) "
+format = "[ \\[$branch$remote_name/$remote_branch\\]]($style) "
 
 [status]
 disabled = false
