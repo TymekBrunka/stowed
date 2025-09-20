@@ -65,8 +65,9 @@ alias c='clear'
 alias sudo='doas'
 alias m='make'
 alias j='just'
-alias ccc='~/bin/c3/c3c --stdlib ~/lib/c3/std/'
-alias c3c='~/bin/c3/c3c --stdlib ~/lib/c3/std/'
+# alias ccc='~/bin/c3/c3c --stdlib ~/lib/c3/std/'
+# alias c3c='~/bin/c3/c3c --stdlib ~/lib/c3/std/'
+alias zig="zvm run 0.13.0"
 
 alias gyt='git'
 alias gin='git init'
@@ -96,3 +97,8 @@ if [[ $XDG_SESSION_DESKTOP == "river" ]]; then
 fi;
 
 export PATH="$HOME/.cargo/bin/:$PATH"
+
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"

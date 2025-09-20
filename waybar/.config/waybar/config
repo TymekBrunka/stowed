@@ -4,12 +4,17 @@
     "position": "top",
     "height": 30,
 
-    "modules-left": ["river/tags", "river/window"],
+    "modules-left": ["river/tags", "river/window", "hyprland/workspaces"],
     "modules-center": [],
     "modules-right": ["tray", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
     //"sway/mode": {
     //    "format": " {}"
     //},
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "*": 9
+        }
+    },
     "dwl/tags": {
         "format": "{name}",
         "disable-scroll": true
