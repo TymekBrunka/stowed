@@ -102,3 +102,6 @@ export PATH="$HOME/.cargo/bin/:$PATH"
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
+
+# Created by `pipx` on 2025-09-26 17:34:42
+export PATH="$PATH:/home/tymek/.local/bin"
