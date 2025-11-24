@@ -27,7 +27,7 @@ riverctl spawn ~/scripts/way-bg.sh
 riverctl spawn ~/scripts/set-theme.sh
 
 MOD=Super
-riverctl map normal ${MOD} Return spawn kitty
+riverctl map normal ${MOD} Return spawn alacritty
 riverctl map normal ${MOD} D spawn "rofi -show drun"
 riverctl map normal ${MOD} Tab spawn ~/scripts/screenshot.sh
 
