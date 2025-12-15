@@ -105,3 +105,6 @@ export PATH="$PATH:$ZVM_INSTALL/"
 
 # Created by `pipx` on 2025-09-26 17:34:42
 export PATH="$PATH:/home/tymek/.local/bin"
+
+#vcpkg
+export PATH="$PATH:$HOME/vcpkg/"
