@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Android Studio
+Name[en_US]=Android Studio
+GenericName=Android studio
+GenericName[en_US]=Android studio
+Comment=Android Studio
+Exec=/home/tymek/Documents/android-studio/bin/studio
+Terminal=false
+Type=Application
+Icon=/home/tymek/Documents/android-studio/bin/studio.svg
+Categories=Graphics;2DGraphics;Viewer;
