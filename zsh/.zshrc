@@ -76,6 +76,8 @@ alias gra='git remote add'
 alias gps='git push'
 alias gpl='git pull'
 
+# export CMAKE_C_COMPILER=/usr/bin/clang
+
 #fix xorg just in case
 # export DISPLAY=:0
 
@@ -98,6 +100,8 @@ fi;
 
 export PATH="$HOME/.cargo/bin/:$PATH"
 
+export CPM_SOURCE_CACHE=$HOME/.cache/CPM
+
 # ZVM
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
@@ -108,3 +112,7 @@ export PATH="$PATH:/home/tymek/.local/bin"
 
 #vcpkg
 export PATH="$PATH:$HOME/vcpkg/"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

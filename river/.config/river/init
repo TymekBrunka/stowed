@@ -20,6 +20,7 @@ XDG_CURRENT_DESKTOP=sway
 MOZ_ENABLE_WAYLAND=1 
 QT_QPA_PLATFORM="wayland;xcb"
 
+riverctl spawn "sh -c 'dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway'"
 riverctl spawn "sh -c '/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr'"
 riverctl spawn waybar
 riverctl spawn dunst
