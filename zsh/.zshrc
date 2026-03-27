@@ -86,12 +86,6 @@ eval "$(zoxide init --cmd cd zsh)"
 #starship prompt
 eval "$(starship init zsh)"
 
-if [[ $XDG_SESSION_DESKTOP == "river-custom" ]]; then
-    export XDG_CURRENT_SESSION=wlr
-    export XDG_CURRENT_DESKTOP=sway
-    export QT_QPA_PLATFORM="wayland;xcb"
-fi;
-
 if [[ $XDG_SESSION_DESKTOP == "river" ]]; then
     export XDG_CURRENT_SESSION=wlr
     export XDG_CURRENT_DESKTOP=sway
@@ -101,18 +95,18 @@ fi;
 export PATH="$HOME/.cargo/bin/:$PATH"
 
 export CPM_SOURCE_CACHE=$HOME/.cache/CPM
+export CM_THIRDPARTY=$HOME/thirdparty/cmake
 
-# ZVM
-export ZVM_INSTALL="$HOME/.zvm/self"
-export PATH="$PATH:$HOME/.zvm/bin"
-export PATH="$PATH:$ZVM_INSTALL/"
+# # ZVM
+# export ZVM_INSTALL="$HOME/.zvm/self"
+# export PATH="$PATH:$HOME/.zvm/bin"
+# export PATH="$PATH:$ZVM_INSTALL/"
 
 # Created by `pipx` on 2025-09-26 17:34:42
 export PATH="$PATH:/home/tymek/.local/bin"
 
 #vcpkg
 export PATH="$PATH:$HOME/vcpkg/"
-
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
